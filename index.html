@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        list-style: none;
+        text-decoration: none;
+        
+        
+      }
+    </style>
+</head>
+<body>
+    <script>
+        document.body.setAttribute(
+            "style", "background-color:#f28422; color:white;"
+        )
+        let header=document.createElement("header")
+        document.body.appendChild(header);
+
+        let logo=document.createElement("logo")
+        header.appendChild(logo);
+        logo.innerHTML="SWIGGY";
+
+        let ul=document.createElement("ul")
+        header.appendChild(ul);
+
+        let home=document.createElement("li")
+        ul.appendChild(home);
+        home.innerHTML="HOME";
+
+        let menu=document.createElement("li")
+        ul.appendChild(menu);
+        menu.innerHTML="MENU";
+
+        let about=document.createElement("li")
+        ul.appendChild(about);
+        about.innerHTML="ABOUT US";
+
+        let service=document.createElement("li")
+        ul.appendChild(service);
+        service.innerHTML="SERVICES";
+
+        let contact=document.createElement("li")
+        ul.appendChild(contact);
+        contact.innerHTML="CONTACT";
+
+        let li=document.getElementsByTagName("li")[0];
+
+        header.setAttribute("style", "width:100%; display: flex; align-items:center; justify-content: space-between; padding: 30px 170px; background-color: #f28422");
+
+        logo.setAttribute("style", " letter-spacing: 6px; font-weight:600; font-size:2.5em; color:black; font-family: 'Tilt Warp', cursive;" );
+
+        ul.setAttribute("style", "display: flex;")
+
+        home.setAttribute("style", "color:white; font-size:1.1em; padding:10px 20px; font-weight:500; cursor:pointer;");
+
+        menu.setAttribute("style", "color:white; font-size:1.1em; padding:10px 20px; font-weight:500; cursor:pointer;");
+
+        about.setAttribute("style", "color:white; font-size:1.1em; padding:10px 20px; font-weight:500; cursor:pointer;");
+
+        service.setAttribute("style", "color:white; font-size:1.1em; padding:10px 20px; font-weight:500; cursor:pointer;");
+
+        contact.setAttribute("style", "color:white; font-size:1.1em; padding:10px 20px; font-weight:500; cursor:pointer;");
+
+        let section = document.createElement("section");
+        document.body.appendChild(section);
+
+        let textbox = document.createElement("div");
+        section.appendChild(textbox);
+
+        let text1 = document.createElement("h1");
+        textbox.appendChild(text1);
+        text1.innerHTML="Swiggy Karo,";
+
+        let text2 = document.createElement("h2");
+        textbox.appendChild(text2);
+        text2.innerHTML="Phir Jo Chahe Karo!";
+
+        let button = document.createElement("button");
+        textbox.appendChild(button);
+        button.innerHTML="Order Now!";
+
+        let image = document.createElement("div");
+        section.appendChild(image);
+
+        let pic = document.createElement("img");
+        image.appendChild(pic);
+
+        pic.setAttribute("src", "https://oppositehq.com/static/b305a3cb55928b02234f06babfadfe4f/7b1eb/0_herounit_swiggy_c81de7c262.jpg");
+
+        section.setAttribute("style", "padding: 80px 10%; width:100%; min-height:70vh; display:grid; grid-template-columns: repeat(2, 1fr); grid-gap: 1.5em; align-items: center;")
+
+        pic.setAttribute("style", "width: 600px;height: auto;");
+
+        text1.setAttribute("style", "font-size: 5rem; color:black;");
+
+        text2.setAttribute("style", "font-size: 3.5rem;margin-bottom: 20px;");
+
+        button.setAttribute(
+          "style",
+          "display: inline-block;padding: 10px 20px; background-color: #f56614;color:#fff; border-radius: 0.5rem; border:none; cursor:pointer;"
+        );
+    </script>
+</body>
+</html>
